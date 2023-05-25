@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.5em;
+  background-color: white;
+}
+#heading{
+  background-image: url(images/ad.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+.visit-ad{
+  border: 3px solid #0B090A;
+  background-color: white;
+  padding: 10px 20px;
+}
+.quote{
+  border: 3px solid #0B090A;
+  background-color: white;
+  padding: 10px 30px;
+}
+.container{
+  margin:50px 100px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.activity-img{
+  margin: 10px;
+  align-items: center;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.activity{
+  margin: 10px 40px;
+  width: 270px;
+  padding: 5px;
+  font-size: 17px;
+  background-color: white;
+  box-shadow:0px 0px 11px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+}
+.activity-title{
+  text-align: center;
+}
+.activity-sub{
+  width: 190px;
+}
+a{
+  color:#0B090A;
+}
+a:hover{
+  color: blue;
+}
+.to-do{
+  display: inline-block;
+  border: 3px solid #0B090A;
+  margin: 25px 0 0 145px;
+  background-color:white ;
+  padding: 10px 13px;
+}
+@media(max-width:630px) {
+  .activity-img{
+    width: 240px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0%;
+  }
+}
+@media(max-width:649px){
+  .to-do{
+    display: block;
+    width: fit-content;
+    margin: 12px auto;
+  }
+}
+footer{
+  background-color: #0B090A;
+  padding-bottom: 1px;
+}
+#footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+ 
+}
+.guide{
+  flex-wrap: wrap;
+  gap:20px;
+  padding: 0 30px 0 0;
+  display: flex;
+  background-color: white;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 0px 7px rgba(255,255,255,0.7);
+}
+.guide>*{
+  width: 200px;
+}
+@media(max-width:510px){
+  .guide{
+    padding:45px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .guide>p{
+    width: 220px;
+  }
+  .my-img{
+    width:230px;
+  }
+}
+.ending{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ending>p{
+  color:white;
+}
+
